@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lavender;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.CalculatorSceneController">
+   <children>
+      <TextField layoutX="193.0" layoutY="108.0" prefHeight="18.0" prefWidth="214.0" fx:id="xTextField">
+         <effect>
+            <Glow />
+         </effect>
+      </TextField>
+      <TextField fx:id="yTextField" layoutX="193.0" layoutY="154.0" prefHeight="18.0" prefWidth="214.0">
+         <effect>
+            <Glow />
+         </effect>
+      </TextField>
+      <Label layoutX="137.0" layoutY="112.0" prefHeight="34.0" prefWidth="50.0" text="Enter x" textFill="#e10606">
+         <font>
+            <Font name="Cambria" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="137.0" layoutY="158.0" text="Enter y" textFill="#e10606">
+         <font>
+            <Font name="Cambria" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="68.0" layoutY="226.0" mnemonicParsing="false" onAction="#addOnClick" text="Add">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="193.0" layoutY="226.0" mnemonicParsing="false" onAction="#subOnClick" text="Substract">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="328.0" layoutY="226.0" mnemonicParsing="false" onAction="#MultOnClick" text="Multiply">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="460.0" layoutY="226.0" mnemonicParsing="false" onAction="#DivOnClick" text="Divide">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="resultLabel" alignment="CENTER" layoutX="63.0" layoutY="291.0" prefHeight="22.0" prefWidth="448.0" style="-fx-alignment: #C8FF91;" text="RESULT" textFill="#e10606">
+         <font>
+            <Font name="Cambria Bold Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
